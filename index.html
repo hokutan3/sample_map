@@ -12,11 +12,7 @@
   <script>
     //マーカーの情報
     const data = [
-    {
-    lat:'35.68124076523584',
-    lng:'139.76713933607004',
-    contentString:'<p>東京駅</p><a href="https://ja.wikipedia.org/wiki/%E6%9D%B1%E4%BA%AC%E9%A7%85" target="_blank">詳細情報を表示</a>'
-    },
+      {lat:'35.68124076523584',lng:'139.76713933607004',contentString:'<p>東京駅</p><a href="https://ja.wikipedia.org/wiki/%E6%9D%B1%E4%BA%AC%E9%A7%85" target="_blank">詳細情報を表示</a>'},
 
     ]
     
@@ -24,7 +20,7 @@
     function initMap() {
       //表示条件
       const opts = {
-          zoom: 15,
+          zoom: 14,
           center: {lat:35.68124076523584, lng:139.76713933607004}
       };
       const map = new google.maps.Map(document.getElementById("newPropertiesMap"), opts);
