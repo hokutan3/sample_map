@@ -45,17 +45,11 @@
           infoWindow.open(map, marker);
           if (old_marker !== -1) {
             old_infoWindow.close(map, old_marker);
-            if (old_marker == marker) {
-              old_infoWindow = -1;
-              old_marker = -1;
-            }
-            else {
-              old_infoWindow = infoWindow;
-              old_marker = marker;                  
-            }
           }
-          else{
-            old_infoWindow = infoWindow;
+          old_infoWindow = infoWindow;
+          if (old_marker === marker) {
+            old_marker = -1;
+          } else {
             old_marker = marker;
           }
         });
